@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from statsmodels.graphics.tsaplots import plot_pacf, plot_acf
 
 
-def file2ts(file_path_and_name, resample_freq):
+def file2ts(file_path_and_name, resample_freq='15min'):
     """
     读取csv文件中的数据，转换成时间序列
     重新采样（自动处理缺失值，时间自动变为等间隔，自动按照时间顺序排序）
